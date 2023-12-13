@@ -52,7 +52,6 @@ config FLASH_JESD216_API
 config FLASH_SHELL
 	bool "Flash shell"
 	depends on SHELL && FLASH_PAGE_LAYOUT
-	default y
 	help
 	  Enable the flash shell with flash related commands such as test,
 	  write, read and erase.
