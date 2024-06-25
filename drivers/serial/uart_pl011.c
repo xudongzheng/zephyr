@@ -80,6 +80,7 @@ static void pl011_disable(const struct device *dev)
 
 static void pl011_enable_fifo(const struct device *dev)
 {
+	return;
 	get_uart(dev)->lcr_h |= PL011_LCRH_FEN;
 }
 
