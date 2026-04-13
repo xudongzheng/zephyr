@@ -568,7 +568,7 @@ class Build(Forceable):
                     f'use --build-dir {self.build_dir} to specify a build directory')
 
         try:
-            srcrel = pathlib.Path(self.source_dir).relative_to(pathlib.Path.cwd(), walk_up=True)
+            srcrel = os.path.relpath(self.source_dir)
         except ValueError:
             srcrel = self.source_dir
         self.check_force(
