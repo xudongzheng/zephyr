@@ -23,6 +23,8 @@ manifest:
       url-base: https://github.com/zephyrproject-rtos
     - name: babblesim
       url-base: https://github.com/BabbleSim
+    - name: hathach
+      url-base: https://github.com/hathach
 
   group-filter: [-babblesim, -optional, -testing]
 
@@ -397,6 +399,10 @@ manifest:
       path: modules/crypto/tf-psa-crypto
       groups:
         - crypto
+    - name: tinyusb
+      remote: hathach
+      revision: dae3f9a366bfcddbf9dcf1b48d7500286a849539
+      path: modules/lib/tinyusb
     - name: trusted-firmware-a
       revision: 4d431cbbb451d13359534c63bf67e2d315ca37de
       path: modules/tee/tf-a/trusted-firmware-a
