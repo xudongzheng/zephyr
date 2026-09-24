@@ -23,6 +23,8 @@ manifest:
       url-base: https://github.com/zephyrproject-rtos
     - name: babblesim
       url-base: https://github.com/BabbleSim
+    - name: kmackay
+      url-base: https://github.com/kmackay
 
   group-filter: [-babblesim, -optional]
 
@@ -325,6 +327,10 @@ manifest:
       path: bootloader/mcuboot
       groups:
         - bootloader
+    - name: micro-ecc
+      remote: kmackay
+      revision: 541b3a78026420a3e369c4c9281c396b5e531113
+      path: modules/crypto/micro-ecc
     - name: mipi-sys-t
       path: modules/debug/mipi-sys-t
       groups:
